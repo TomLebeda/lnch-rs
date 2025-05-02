@@ -3,7 +3,11 @@ This is a very simple CLI tool that will run a child process with group-id set t
 *Inspired by https://github.com/oem/lnch.*
 
 **Usage**:
-It's very simple, just write the command after `lnch-rs`. For example, to launch GIMP: ` $ lnch-rs gimp `
+
+It's very simple, just write the command after `lnch-rs`. For example, to launch GIMP, simply execute:
+```bash
+$ lnch-rs gimp
+```
 
 **Installation**:
 
