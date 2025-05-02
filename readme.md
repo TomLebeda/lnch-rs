@@ -4,4 +4,4 @@ This is a very simple CLI tool that will run a child process with group-id set t
 
 **Installation**:
 
-You can download the pre-compiled binaries from [here](https://github.com/TomLebeda/chroma_code/releases) or clone this repo and run `cargo build --release` (assuming you have [Rust and Cargo installed and set up](https://rustup.rs/)).
+You can download the pre-compiled binaries from [here](https://github.com/TomLebeda/lnch-rs/releases) or clone this repo and run `cargo build --release` (assuming you have [Rust and Cargo installed and set up](https://rustup.rs/)).
