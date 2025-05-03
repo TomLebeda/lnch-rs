@@ -1,6 +1,10 @@
 //! Minimal launcher that detaches the child process so it keeps running when the parent process is killed
 
-use std::{env, os::unix::process::CommandExt, process::Command};
+use std::{
+    env,
+    os::unix::process::CommandExt,
+    process::{Command, Stdio},
+};
 
 fn main() {
     let mut args = env::args().skip(1);
@@ -10,7 +14,14 @@ fn main() {
     });
     let args: Vec<String> = args.collect();
 
-    match Command::new(cmd).args(&args).process_group(0).spawn() {
+    match Command::new(cmd)
+        .args(&args)
+        .process_group(0)
+        .stdin(Stdio::null())
+        .stdout(Stdio::null())
+        .stderr(Stdio::null())
+        .spawn()
+    {
         Ok(_) => {}
         Err(e) => {
             eprintln!("Failed to spawn process: {e}");
