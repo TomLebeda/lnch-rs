@@ -9,7 +9,7 @@ use std::{
 fn main() {
     let mut args = env::args().skip(1);
     let cmd = args.next().unwrap_or_else(|| {
-        eprintln!("Usage: lnch-rs <command> <optional parameters>");
+        eprintln!("Usage: lnch <command> <optional parameters>");
         std::process::exit(1);
     });
     let args: Vec<String> = args.collect();

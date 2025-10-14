@@ -7,9 +7,9 @@ Also not all shells provide a way to simply detach the process (notably Nushell)
 
 **Usage**:
 
-It's very simple, just write the command after `lnch-rs`. For example, to launch GIMP, simply execute:
+It's very simple, just write the command after `lnch`. For example, to launch GIMP, simply execute:
 ```bash
-$ lnch-rs gimp
+$ lnch gimp
 ```
 
 **Installation**:
